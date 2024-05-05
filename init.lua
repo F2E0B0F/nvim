@@ -6,5 +6,5 @@ vim.o.shiftwidth = 4;
 
 require('fan')
 
-vim.o.background = "light"
-vim.cmd.colorscheme "catppuccin"
+-- vim.o.background = "light"
+-- vim.cmd.colorscheme "catppuccin"
