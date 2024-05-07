@@ -1,7 +1,7 @@
 # My neovim Configuration
 
 ## Note
-LSP's available currently:
+LSPs available currently:
 |Language|LSP server|package/executable|
 |----|----|----|
 |Rust|rust-analyzer|`rust-analyzer`(arch)|
