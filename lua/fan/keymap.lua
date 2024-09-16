@@ -1,7 +1,7 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
-vim.api.nvim_set_keymap("n", "<leader>c", ":E " .. vim.fn.stdpath("config") .. "<CR>",
+vim.api.nvim_set_keymap("n", "<leader>c", ":Explore " .. vim.fn.stdpath("config") .. "<CR>",
 	{ noremap = true})
 
 -- Keybindings to adjust windows
