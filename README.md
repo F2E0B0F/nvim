@@ -1,5 +1,5 @@
 # Neovim Configuration
-# By F2E0B0F
+### By F2E0B0F
 
 -----------
 
