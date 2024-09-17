@@ -1,11 +1,13 @@
 local lspconfig = require('lspconfig')
+
+-- Rust (rust_analyzer)
 lspconfig.rust_analyzer.setup {
-  -- Server-specific settings. See `:help lspconfig-setup`
   settings = {
     ['rust-analyzer'] = {},
   },
 }
 
+-- Lua (lua-language-server)
 lspconfig.lua_ls.setup {
   on_init = function(client)
     local path = client.workspace_folders[1].name
@@ -36,4 +38,37 @@ lspconfig.lua_ls.setup {
   settings = {
     Lua = {}
   }
+}
+
+-- Typescript (ts_ls)
+require'lspconfig'.ts_ls.setup{
+  init_options = {
+    plugins = {
+      {
+        name = "@vue/typescript-plugin",
+        location = "/usr/local/lib/node_modules/@vue/typescript-plugin",
+        languages = {"javascript", "typescript", "vue"},
+      },
+    },
+  },
+  filetypes = {
+    "javascript",
+    "typescript",
+    "vue",
+  },
+}
+
+-- You must make sure volar is setup
+-- e.g. require'lspconfig'.volar.setup{}
+-- See volar's section for more information
+
+-- Vue (volar)
+local confs = {
+	filetypes = {'javascript', 'javascriptreact', 'vue', 'json'}
+}
+
+require("lspconfig").volar.setup{confs}
+
+-- C/C++ (clangd)
+require'lspconfig'.clangd.setup{
 }
