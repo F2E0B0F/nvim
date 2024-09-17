@@ -9,3 +9,9 @@ LSPs available currently:
 |Javascript/Vue|volar|`@vue/typescript-plugin`(node) `@vue/language-server`(node)|
 |Java(maven/gradle)|jdtls|`jdtls`(exec)|
 |C/C++|clangd|`clangd`(exec) or `clang`(arch)|
+
+## Setup
+```bash
+$ cd ~/.config
+$ git clone https://github.com/F2E0B0F/nvim.git
+```
